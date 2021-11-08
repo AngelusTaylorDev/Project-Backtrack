@@ -69,8 +69,7 @@ main>.container {
 /* Main Body Styling */
 
 .app-logo img {
-    width: 600px;
-    height: 350px;
+    width: 80%;
 }
 
 .inBolden {
@@ -132,4 +131,3 @@ footer .social>a:hover {
     color: var(--secondary-color);
     opacity: 0.9;
 }
-
