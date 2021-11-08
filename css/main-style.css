@@ -9,20 +9,20 @@
 /* font styling */
 h1, h2, h3{
     color: var(--secondary-color);
-    font-family: 'IM Fell Great Primer SC', serif;
-}
-
-h1, .app-name {
-    font-size: 2.5em;
+    font-family: 'Bebas Neue', cursive;
 }
 
 h4 {
     color: var(--dark-color);
-    font-family: 'Gideon Roman', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
-    font-family: 'Gideon Roman', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, .app-name {
+    font-size: 2.5em;
 }
 
 /* a tag styling */
@@ -74,6 +74,22 @@ main>.container {
 
 .inBolden {
     font-weight: bold;
+}
+
+.alert {
+    background-color: var(--dark-color);
+}
+
+.alert h2, hr{
+    color: var(--white-color);
+}
+
+.alert h3 {
+    color: var(--white-color);
+}
+
+.messageStyle {
+    color: var(--secondary-color);
 }
 
 /* Tech Icons styling */

@@ -24,7 +24,8 @@
     <!-- Gideon Roman & IM Fell Great Primer SC -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=IM+Fell+Great+Primer+SC&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -68,16 +69,82 @@
             <div class="row row-cols-1 row-cols-lg-2">
                 <div class="col-lg-8">
                     <pre class="line-numbers"><code class="language-javascript">
-                        //Call Hello World
-                        function helloWorld() {
-                            alert("Hello World");
+                        // Pseudo code
+                        // --------------------------------------------------
+                        // 1. Sellect the HTML elements needed 
+                        // 2. Get the user input from the string they provide.
+                        // 3. Loop through and reverse the string 
+                        // 4. Run the Program after the button is pushed
+                        // 5. Display the string in the alert on the page
+                        // --------------------------------------------------
+
+
+                        // 1. Sellect the HTML elements needed 
+                        const backtrackBtn = document.getElementById('btn-submit');
+                        let stringResults = document.getElementById('string-results');
+
+
+                        // 2. Get the user input from the string they provide.
+                        // controller function 
+                        function getUserString() {
+                            // Sellecting the HTML form element  
+                            const userStringInput = document.getElementById('user-stringT');
+
+                            // Make the String area invisable
+                            stringResults.classList.add('invisible');
+
+                            // Get the value of the user's string
+                            let userString = userStringInput.value;
+
+                            // Get the value of the user's revirsed string
+                            let revString = reverseString(userString);
+
+                            // Printing the reversed string
+                            displayString(revString);
                         }
+
+                        // 3. Loop through and reverse the string 
+                        // Logic function 
+                        function reverseString(userString){
+
+                            let revString = [];
+
+                            // loop through the string 
+                            for (let i = userString.length -1; i >= 0; i--) {
+                                revString += userString[i];
+                                console.log(revString);
+                            }
+                            return revString;
+                        }
+
+                        // 4. Display the string in the alert on the page
+                        // Videw function 
+                        function displayString(revString) {
+
+                            // Get the string message element 
+                            const stringMessage = document.getElementById('backtrack-string');
+
+                            // Write to the page 
+                            stringMessage.innerHTML = `Your string is: <span class="messageStyle">${revString}</span>`;
+
+                            // Turn on the alert box 
+                            // Make the String Message area visable
+                            stringResults.classList.remove('invisible');
+                        }
+
+                        // 5. Run the Program after the button is pushed
+                        backtrackBtn.addEventListener('click', () => {
+                            getUserString();
+                            reverseString(userString);
+                        })
                     </code></pre>
                 </div>
                 <div class="col-lg-4">
-                    <p>The code is struched in one functione</p>
-                    <h5>Hello World Presented using <span><a target="_blank" href="https://prismjs.com/index.html">Prism.js</a></span></h5>
-                    <p>Hello World is a alert with a message of hello world</p>
+                    <h2>The code is structured in one function.</h2>
+                    <h5>Presented using <span><a target="_blank"
+                                href="https://prismjs.com/index.html">Prism.js</a></span></h5>
+                    <p>Hermes 100 will display the numbers 0 to 100 and highlight the even numbers in <span class="inBolden">BOLD</span>.</p>
+                    <p>Unfortunately, Prism.js doesn't work with string template literals well. For the full source code check out my git Repo.</p>
                 </div>
             </div>
         </div>
