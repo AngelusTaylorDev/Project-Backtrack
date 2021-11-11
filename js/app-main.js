@@ -63,6 +63,7 @@ function displayString(revString) {
 
 // 5. Run the Program after the button is pushed
 backtrackBtn.addEventListener('click', () => {
+    alert("Ass");
     getUserString();
     reverseString(userString);
 })
