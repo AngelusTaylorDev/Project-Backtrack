@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: By Angelus Taylor</title>
+    <title>Project Backtrack: By Angelus Taylor</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,7 +35,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img class="d-inline-block align-text-top" src="img/ms-icon-310x310.png"
-                    alt="A T D Icon"> BACKTRACK</a>
+                    alt="A T D Icon"><span id="app-name-icon"> Backtrack</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,13 +43,13 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="app.html">The App</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="code.html">The Code</a>
+                        <a class="nav-link active" aria-current="page" href="code.html">The Code</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" href="#">About</a>
@@ -65,85 +65,18 @@
     <!-- Main Body Section -->
     <main class="flex-shrink-0">
         <div class="container py-5 pt-5 mt-5">
-            <h2 class="tittle border-1 border-bottom border-dark">The Code for APP NAME</h2>
+            <h2 class="tittle border-1 border-bottom border-dark">The Code for Project Backtrack</h2>
             <div class="row row-cols-1 row-cols-lg-2">
                 <div class="col-lg-8">
                     <pre class="line-numbers"><code class="language-javascript">
                         // Pseudo code
-                        // --------------------------------------------------
-                        // 1. Sellect the HTML elements needed 
-                        // 2. Get the user input from the string they provide.
-                        // 3. Loop through and reverse the string 
-                        // 4. Run the Program after the button is pushed
-                        // 5. Display the string in the alert on the page
-                        // --------------------------------------------------
-
-
-                        // 1. Sellect the HTML elements needed 
-                        const backtrackBtn = document.getElementById('btn-submit');
-                        let stringResults = document.getElementById('string-results');
-
-
-                        // 2. Get the user input from the string they provide.
-                        // controller function 
-                        function getUserString() {
-                            // Sellecting the HTML form element  
-                            const userStringInput = document.getElementById('user-stringT');
-
-                            // Make the String area invisable
-                            stringResults.classList.add('invisible');
-
-                            // Get the value of the user's string
-                            let userString = userStringInput.value;
-
-                            // Get the value of the user's revirsed string
-                            let revString = reverseString(userString);
-
-                            // Printing the reversed string
-                            displayString(revString);
-                        }
-
-                        // 3. Loop through and reverse the string 
-                        // Logic function 
-                        function reverseString(userString){
-
-                            let revString = [];
-
-                            // loop through the string 
-                            for (let i = userString.length -1; i >= 0; i--) {
-                                revString += userString[i];
-                                console.log(revString);
-                            }
-                            return revString;
-                        }
-
-                        // 4. Display the string in the alert on the page
-                        // Videw function 
-                        function displayString(revString) {
-
-                            // Get the string message element 
-                            const stringMessage = document.getElementById('backtrack-string');
-
-                            // Write to the page 
-                            stringMessage.innerHTML = `Your string is: <span class="messageStyle">${revString}</span>`;
-
-                            // Turn on the alert box 
-                            // Make the String Message area visable
-                            stringResults.classList.remove('invisible');
-                        }
-
-                        // 5. Run the Program after the button is pushed
-                        backtrackBtn.addEventListener('click', () => {
-                            getUserString();
-                            reverseString(userString);
-                        })
+                        
                     </code></pre>
                 </div>
                 <div class="col-lg-4">
-                    <h2>The code is structured in three functions.</h2>
-                    <h5>Presented using <span><a target="_blank"
-                                href="https://prismjs.com/index.html">Prism.js</a></span></h5>
-                    <p>Hermes 100 will display the numbers 0 to 100 and highlight the even numbers in <span class="inBolden">BOLD</span>.</p>
+                    <h2>Project Backtrack</h2>
+                    <h5>Presented using <span><a target="_blank" href="https://prismjs.com/index.html">Prism.js</a></span></h5>
+                    <p>Backtrack starts by taking the string to be reversed as input from the user. After that, the length of the string is calculated and stored in a variable, for example, 'revString'. </p> <br>
                     <p>Unfortunately, Prism.js doesn't work with string template literals well. For the full source code check out my git Repo.</p>
                 </div>
             </div>

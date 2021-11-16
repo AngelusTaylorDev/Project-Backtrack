@@ -6,23 +6,36 @@
     --white-color: #f8f7f1;
 }
 
-/* font styling */
-h1, h2, h3{
+* font styling */
+body {
+    background-color: rgb(27, 27, 27);
+}
+
+h1,
+h2,
+h3 {
     color: var(--secondary-color);
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'IM Fell Great Primer SC', serif;
+}
+
+h1,
+.app-name {
+    font-size: 2.5em;
 }
 
 h4 {
     color: var(--dark-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Gideon Roman', cursive;
+    font-weight: 800;
+}
+
+h5 {
+    color: var(--light-color);
+    font-family: 'Gideon Roman', cursive;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
-}
-
-h1, .app-name {
-    font-size: 2.5em;
+    font-family: 'Gideon Roman', cursive;
 }
 
 /* a tag styling */
@@ -37,17 +50,39 @@ a:hover {
 /* button styling */
 .btn {
     color: var(--secondary-color);
-    outline: var(--dark-color);
+    background-color: var(--dark-color);
 }
 
 .btn:hover {
-    color: var(--white-color);
-    background-color: var(--dark-color);
+    color: var(--dark-color);
+    background-color: var(--secondary-color);
+    font-weight: 500;
 }
 
 /* navbar Styling having to overide bootstrap */
-nav { 
+#app-name-icon {
+    color: var(--white-color);
+}
+
+nav {
     background-color: var(--dark-color);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--white-color);
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--secondary-color);
+}
+
+.navbar-dark li a {
+    font-size: 1.2rem;
 }
 
 nav img {
@@ -69,27 +104,11 @@ main>.container {
 /* Main Body Styling */
 
 .app-logo img {
-    width: 80%;
+    width: 85%;
 }
 
 .inBolden {
     font-weight: bold;
-}
-
-.alert {
-    background-color: var(--dark-color);
-}
-
-.alert h2, hr{
-    color: var(--white-color);
-}
-
-.alert h3 {
-    color: var(--white-color);
-}
-
-.messageStyle {
-    color: var(--secondary-color);
 }
 
 /* Tech Icons styling */
@@ -113,9 +132,14 @@ main>.container {
     color: var(--secondary-color);
 }
 
+.lead {
+    font-size: 1em;
+}
+
 
 /* Prism custom JS */
-code[class*="language-"], pre[class*="language-"] {
+code[class*="language-"],
+pre[class*="language-"] {
     white-space: pre-wrap;
     word-break: break-all;
     word-wrap: break-word;
@@ -134,7 +158,12 @@ footer {
     background-color: var(--dark-color);
 }
 
-footer, img {
+.email {
+    font-size: 1rem;
+}
+
+footer,
+img {
     width: 180px;
 }
 
