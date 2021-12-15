@@ -12,7 +12,6 @@
 const backtrackBtn = document.getElementById('btn-submit');
 let stringResults = document.getElementById('string-results');
 
-
 // 2. Get the user input from the string they provide.
 // controller function 
 function getUserString() {
